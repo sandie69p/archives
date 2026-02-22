@@ -10,6 +10,7 @@ int main() {
 	int b = 20;
 
 	int sum = somma(a, b);
+	printf("Somma: %d", sum);
 	return 0;
 }
 
