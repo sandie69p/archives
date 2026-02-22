@@ -2,6 +2,7 @@ public class Main {
 	public static void main(String[] args) {
 		System.out.print("Enter you payout of shopping: ");
 		String shoppingBills = System.console().readLine();
+		shoppingBills.toInt();
 
 		System.out.println("Bill: ${shoppingBills}");
 
