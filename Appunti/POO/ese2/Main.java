@@ -44,6 +44,18 @@ public class Main {
 	}
 
 	public static void main(String[] args) {
+		int i = 0;
+		Veicolo mia_macchina = new VeicoloBenzina("AA 000 AA", 30);
+
+		System.out.println("Inserisci un numero: ");
+		System.out.println("Inserisci 1 per rifornire la macchina a benzina; ");
+		System.out.println("inserisci 2 per rifornire la macchina elettrica; ");
+		System.out.println("Premi q per uscire");
+
+	
 		
+		switch(i) {
+			case 1: { Veicolo.rifornisciBenzina();  }
+		}
 	}
 }
