@@ -19,6 +19,30 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Main {	
+	public class Veicolo() {
+		private String tag;
+		private int energyLevel;
+		private int fuelLevel;
+
+		public VeicoloBenzina(tag, energyLevel) {
+			this.tag = tag;
+			this.fuelLevel = fuelLevel;
+		}
+
+		public VeicoloElettrico() {
+			this.tag = tag;
+			this.energyLevel = energyLevel;
+		}
+
+		void rifornisciBenzina(fuelLevel) {
+			int fuelToRefuel = 100 - fuelLevel;
+		}
+
+		void rifornisciBatteria(energyLevel) {
+			int energyToRefuel = 100 - energyFuel;
+		}
+	}
+
 	public static void main(String[] args) {
 		
 	}
