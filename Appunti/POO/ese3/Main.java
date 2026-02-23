@@ -3,7 +3,7 @@ public class Main {
     System.out.print("inserisci una temperatura celsius °C: ");
     double celsius = System.console();
 
-    parseDouble(celsius);
+    Double.parseDouble(celsius);
 
     double fahrenheit = (celsius * 9 / 5) + 32;
 
