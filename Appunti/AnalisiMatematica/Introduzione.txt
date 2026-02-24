@@ -5,3 +5,7 @@ Introduzione analisi matematica
 		3> Limite; (5pt)
 		4> Integrale; (5pt)
 		5> Variabile; (5pt)
+
+Lezione 1:
+	- Divisione tra polinomi; > to integrale
+	- 
