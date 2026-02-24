@@ -7,5 +7,7 @@ Introduzione analisi matematica
 		5> Variabile; (5pt)
 
 Lezione 1:
-	- Divisione tra polinomi; > to integrale
+	- Divisione tra polinomi; > to integrale;
+	- n/d = q + r/d;
+	- Ruffini;
 	- 
