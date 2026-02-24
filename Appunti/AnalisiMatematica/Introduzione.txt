@@ -1,3 +1,7 @@
 Introduzione analisi matematica
-	- Esercizi suoi;
-	
+	- Modalità esame:
+		1> Studio di funzione; (10pt)
+		2> Numeri complessi; (5pt)
+		3> Limite; (5pt)
+		4> Integrale; (5pt)
+		5> Variabile; (5pt)
