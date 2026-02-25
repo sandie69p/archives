@@ -6,12 +6,7 @@
 int somma(int, int);
 
 int main() {
-	int a = 10;
-	int b = 20;
-
-	int sum = somma(a, b);
-	printf("Somma: %d", sum);
-	return 0;
+	
 }
 
 int somma(int n, int m) {
