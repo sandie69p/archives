@@ -25,7 +25,7 @@ int main(void) {
 		printf("Inserisci un numero da 0 a 4:\n0: Esci dall'applicazione;\n1: Aggiungi Libro;\n2: Rimuovi Libro;\n3: Mostra Libri;\n ");
 		scanf("%d", &choise);
 		switch(choise) {
-			case 0: { } break;
+			case 0: { liberaChiudi(p, count)} break;
 			case 1: { aggiungiLibro(p, count);  } break;
 			case 2: { rimuoviLibro(p, count);  } break;
 			case 3: { mostraLibro(p, count);  } break;
@@ -62,6 +62,7 @@ void aggiungiLibro(Libro *p, int n) {
 		scanf("%d", &pag);
 
 		p[i].pagine = pag;
+		
 		i++;
 	}
 }
