@@ -43,7 +43,7 @@ void aggiungiLibro(Libro *p, int n) {
 	while(i < n) {
 		// Sezione titolo
 		printf("Inserisci titolo: ");
-		scanf("%[^\n]s", buffer);
+		scanf("%255[^\n]s", buffer);
 
 		len = strlen(buffer);
 		p[i].titolo = realloc(p[i].titolo, len * sizeof(char) + 1);
@@ -54,7 +54,7 @@ void aggiungiLibro(Libro *p, int n) {
 		scanf("%[^\n]s", buffer);
 
 		len = strlen(buffer);
-		p[i].titolo = realloc(p[i].autore, len * sizeof(char) + 1);
+		p[i].autore = realloc(p[i].autore, len * sizeof(char) + 1);
 		strcpy(p[i].autore, buffer);
 
 		// sezione n pagine
@@ -73,5 +73,6 @@ void rimuoviLibro(Libro *p, int n) {
 
 	printf("Quale libro vuoi rimuovere? Indica l'indice del libro: ");
 	scanf("%d", &index);
+
 	
 }
