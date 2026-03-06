@@ -26,7 +26,7 @@ int main(void) {
 		scanf("%d", &choise);
 		switch(choise) {
 			case 0: { } break;
-			case 1: { aggiungiLibro(p);  } break;
+			case 1: { aggiungiLibro(Libro *p);  } break;
 			case 2: { rimuoviLibro(p);  } break;
 			case 3: { mostraLibro(p);  } break;
 			default: continue;
