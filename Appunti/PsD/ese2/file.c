@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-typedef struct {
+typedef struct Libro {
     char *titolo;
     char *autore;
     int pagine;
