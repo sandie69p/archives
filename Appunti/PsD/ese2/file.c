@@ -69,5 +69,9 @@ void aggiungiLibro(Libro *p, int n) {
 }
 
 void rimuoviLibro(Libro *p, int n) {
+	int index;
+
+	printf("Quale libro vuoi rimuovere? Indica l'indice del libro: ");
+	scanf("%d", &index);
 	
 }
