@@ -57,5 +57,11 @@ void aggiungiLibro(Libro *p, int n) {
 		strcpy(p[i].autore, buffer);
 
 		// sezione n pagine
+		int pag;
+		printf("Inserisci numero pagine del libro: ");
+		scanf("%d", &pag);
+
+		p[i].pagine = pag;
+		i++;
 	}
 }
