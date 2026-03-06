@@ -8,9 +8,9 @@ typedef struct Libro {
     int pagine;
 } Libro;
 
-void aggiungiLibro(Libro *);
-void rimuoviLibro(Libro *);
-void mostraLibro(Libro *);
+void aggiungiLibro(Libro *, int);
+void rimuoviLibro(Libro *, int);
+void mostraLibro(Libro *, int);
 
 int main(void) {
 	int count;
@@ -26,14 +26,36 @@ int main(void) {
 		scanf("%d", &choise);
 		switch(choise) {
 			case 0: { } break;
-			case 1: { aggiungiLibro(p);  } break;
-			case 2: { rimuoviLibro(p);  } break;
-			case 3: { mostraLibro(p);  } break;
+			case 1: { aggiungiLibro(p, &count);  } break;
+			case 2: { rimuoviLibro(p, &count);  } break;
+			case 3: { mostraLibro(p, &count);  } break;
 			default: continue;
 		}
 	}
 }
 
-void aggiungiLibro(Libro *p) {
-	
+void aggiungiLibro(Libro *p, count) {
+	int i = 0;
+	char buffer[256];
+	int len;
+
+	while(i < count) {
+		// Sezione titolo
+		printf("Inserisci titolo: ");
+		scanf("%[^\n]s", buffer);
+
+		len = strlen(buffer);
+		p[i].titolo = realloc(p[i].titolo, len * sizeof(char) + 1);
+		strcpy(p[i].titolo, buffer);
+
+		// Sezione autore
+		printf("Inserisci autore: ");
+		scanf("%[^\n]s", buffer);
+
+		len = strlen(buffer);
+		p[i].titolo = realloc(p[i].autore, len * sizeof(char) + 1);
+		strcpy(p[i].autore, buffer);
+
+		// sezione n pagine
+	}
 }
