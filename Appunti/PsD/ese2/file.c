@@ -26,20 +26,20 @@ int main(void) {
 		scanf("%d", &choise);
 		switch(choise) {
 			case 0: { } break;
-			case 1: { aggiungiLibro(p, &count);  } break;
-			case 2: { rimuoviLibro(p, &count);  } break;
-			case 3: { mostraLibro(p, &count);  } break;
+			case 1: { aggiungiLibro(p, count);  } break;
+			case 2: { rimuoviLibro(p, count);  } break;
+			case 3: { mostraLibro(p, count);  } break;
 			default: continue;
 		}
 	}
 }
 
-void aggiungiLibro(Libro *p, count) {
+void aggiungiLibro(Libro *p, int n) {
 	int i = 0;
 	char buffer[256];
 	int len;
 
-	while(i < count) {
+	while(i < n) {
 		// Sezione titolo
 		printf("Inserisci titolo: ");
 		scanf("%[^\n]s", buffer);
