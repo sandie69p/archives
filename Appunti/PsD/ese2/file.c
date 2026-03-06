@@ -33,3 +33,7 @@ int main(void) {
 		}
 	}
 }
+
+void aggiungiLibro(Libro *p) {
+	
+}
