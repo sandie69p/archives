@@ -11,6 +11,7 @@ typedef struct Libro {
 void aggiungiLibro(Libro *, int);
 void rimuoviLibro(Libro *, int);
 void mostraLibro(Libro *, int);
+void liberaChiudi(Libro *, int);
 
 int main(void) {
 	int count;
