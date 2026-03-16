@@ -70,9 +70,16 @@ void aggiungiLibro(Libro *p, int n) {
 
 void rimuoviLibro(Libro *p, int n) {
 	int index;
+	char temp[1024];
 
 	printf("Quale libro vuoi rimuovere? Indica l'indice del libro: ");
 	scanf("%d", &index);
 
-	
+	for(;index < n; index++) {
+		temp = p[index].titolo;
+		p[index].titolo = p[index+1].titolo;
+		temp = p[index+1].titolo;
+	}
+
+
 }
